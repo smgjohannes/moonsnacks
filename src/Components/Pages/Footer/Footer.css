@@ -1,0 +1,67 @@
+/* Footer.css */
+
+/* General styles for larger screens */
+.column {
+  margin: 15px;
+}
+.Footer{
+  background-color: #1E1247;
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #1E1247;
+  padding: 20px;
+
+}
+.ul {
+  list-style-type: none;
+  padding: 0;
+}
+.nav_footer{
+  display: flex;
+  list-style-type: none;
+ 
+}
+.nav_footer li a{
+  padding: 15px;
+}
+.ul li a{
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+ 
+}
+.Contact_P{
+color: white;
+
+}
+
+.ul li {
+  margin-bottom: 10px;
+}
+.copyright{
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+/* Styles for smaller screens */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav li {
+    margin: 0 10px;
+  }
+}

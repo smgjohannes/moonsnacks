@@ -1,0 +1,42 @@
+    {
+    <div className='w3-container w3-teal'>
+      <div className='w3-bar w3-sticky-top navbar'>
+
+        <div className='logo'>
+          <a href="#home">
+            <img
+              src="/Imgs/logo.png"
+              alt="Logo"
+              style={{ height: '120px' }}
+            />
+          </a> 
+           </div>
+           <div class="w3-bar navlink">
+              <div class="w3-bar-item">PRODUCTS</div>
+              <div class="w3-bar-item">ABOUT US</div>
+              <div class="w3-bar-item">NEWS & UPDATES</div>
+              <div class="w3-bar-item">BLOG</div>
+              <div class="w3-bar-item">CONTACT US</div>
+            </div>
+        <button className="w3-button w3-gray w3-xlarge w3-left burgerleft" onClick={openLeftMenu}>☰</button>
+  
+       
+          <div className="w3-sidebar w3-bar-block w3-card w3-animate-left" style={{ display: 'none' }} id="leftMenu">
+            <button onClick={closeLeftMenu} className="w3-bar-item w3-button w3-large">Close ×</button>
+            <a href="#1" className="w3-bar-item w3-button w3-text-black">PRODUCTS</a>
+            <a href="#1" className="w3-bar-item w3-button  w3-text-black">ABOUT US</a>
+            <a href="#1" className="w3-bar-item w3-button  w3-text-black">NEWS & UPDATES</a>
+            <a href="#1" className="w3-bar-item w3-button  w3-text-black">BLOG</a>
+            <a href="#1" className="w3-bar-item w3-button  w3-text-black">CONTACT US</a>
+          </div>
+
+         
+        </div>
+
+        <script type="module" src="./NavFunctions.js"></script>
+      </div>
+    }
+
+
+    
+import { openLeftMenu, closeLeftMenu } from './NavFunctions';
