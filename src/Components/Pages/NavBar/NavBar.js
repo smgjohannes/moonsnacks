@@ -21,7 +21,7 @@ const NavBar = () => {
     <>
       <nav className='w3-top'>
         <Link to="/" className='logo'>
-          <img src="/Imgs/logo.png" alt="Logo" style={{ height: '120px' }} />
+          <img src="/Imgs/logo.png" alt="Logo" style={{ height: '90px',width:'250px' }} />
         </Link>
         <div>
           <ul id='navbar' className={clicked ? 'active' : ''}>
