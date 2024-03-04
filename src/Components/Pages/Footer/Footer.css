@@ -1,52 +1,79 @@
 /* Footer.css */
-
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary-color: #4d5053;
+  --main-color: #ffff;
+  --subMain-color: #1e1247;
+  --font-family: 'Playfair Display', serif;
+  --font-family1: 'Manrope', sans-serif;
+  --jost: 'Jost', sans-serif;
+}
 /* General styles for larger screens */
 .column {
   margin: 15px;
 }
-.Footer{
-  background-color: #1E1247;
+.Footer {
+  background-color: #1e1247;
 }
 .footer {
+  justify-content: space-around;
+  background-color: #1e1247;
+  padding: 20px;
+}
+.footer1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: #1E1247;
-  padding: 20px;
-
 }
 .ul {
   list-style-type: none;
   padding: 0;
 }
-.nav_footer{
+.nav_footer {
+  margin-top: 70px;
   display: flex;
   list-style-type: none;
- 
 }
-.nav_footer li a{
+.nav_footer li a {
   padding: 15px;
 }
-.ul li a{
+.ul li a {
   list-style-type: none;
   text-decoration: none;
   color: white;
- 
+  font-family: var(--font-family);
+  font-size: 22px;
+  font-weight: 400;
 }
-.Contact_P{
-color: white;
-
+.Contact_P {
+  color: white;
+  font-family: var(--font-family);
+  font-size: 22px;
+  font-weight: 400;
 }
 
 .ul li {
   margin-bottom: 10px;
 }
-.copyright{
-  font-size: 1.3rem;
+.copyright {
+  font-size: 22px;
   font-weight: 400;
+  font-family: var(--jost);
+}
+.Footer_moble {
+  display: none;
 }
 /* Styles for smaller screens */
 @media (max-width: 768px) {
+  .Footer {
+    display: none;
+  }
+  .Footer_moble {
+    display: block;
+  }
   .footer {
     flex-direction: column;
     align-items: center;
@@ -55,7 +82,15 @@ color: white;
   .column {
     width: 100%;
   }
-
+  .moon_logo {
+    color: #fff;
+    font-weight: 800;
+    font-size: 40px;
+    font-family: 'Playfair Display' sans-serif;
+  }
+  .linkWithoutUnderline {
+    text-decoration: none;
+  }
   .nav {
     display: flex;
     justify-content: center;

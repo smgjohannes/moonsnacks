@@ -1,15 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap');
 
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: 'Outfit', sans-serif;
   background: #ffffff;
-  padding: 0 40px;
- z-index: 9000;
-
+  padding: 0 20px;
+  z-index: 9000;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
-.w3-top, .w3-bottom {
+.w3-top,
+.w3-bottom {
   position: fixed;
   width: 100%;
   z-index: 9000;
@@ -22,16 +24,21 @@ nav {
 }
 
 #navbar > .w3-bar-item {
-  color: #292F36;
+  color: #292f36;
   font-size: 1.3rem;
   font-weight: 600;
   transition: 0.3s ease-in-out;
 }
-#navbar li{
+#navbar li {
   list-style: none;
   display: flex;
   align-items: center;
+  font-family: 'Outfit, sans-serif';
+  font-weight: 700;
+  font-size: 20px;
+  color: rgba(41, 47, 54, 0.4);
   justify-content: center;
+  text-align: justify;
 }
 
 #mobile {
@@ -42,27 +49,30 @@ nav {
   display: none;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 56.96em) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: 0;
+  }
   #navbar {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     position: fixed;
-    top: 90px;
+    top: 70px;
     right: -300px;
     width: 300px;
     height: 100vh;
-    background: #afadad;
-    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    background: #9193dec9;
     padding: 40px 0 0 10px;
-    transition: 0.3s ease-in-out;
-    border-radius: 15px 0 15px 0;
-  }
-
-  .logo img {
-    max-width: 90%;
-    height: auto;
+    transition: 0.8s ease-in-out;
+    border-radius: 15px 0 0 15px;
+    height: 495px;
   }
 
   #navbar.active {
@@ -71,8 +81,9 @@ nav {
 
   #navbar .w3-button {
     margin-bottom: 25px;
-	font-size: 1.3rem;
-	font-weight: 425;
+    font-size: 1.3rem;
+    background-color: rgba(145, 147, 222, 0);
+    font-weight: 425;
   }
 
   #mobile {

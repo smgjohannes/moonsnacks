@@ -20,27 +20,48 @@ const NavBar = () => {
   return (
     <>
       <nav className='w3-top'>
-        <Link to="/" className='logo'>
-          <img src="/Imgs/logo.png" alt="Logo" style={{ height: '90px',width:'250px' }} />
+        <Link to='/' className='logo'>
+          <img
+            src='/Imgs/logo.png'
+            alt='Logo'
+            style={{ height: '70px', width: '100%', objectFit: 'cover' }}
+          />
         </Link>
         <div>
           <ul id='navbar' className={clicked ? 'active' : ''}>
-            <li className='w3-bar-item w3-button' onClick={() => handleNavLinkClick('/products')}>
+            <li
+              className='w3-bar-item w3-button'
+              onClick={() => handleNavLinkClick('/welcome')}>
+              Coming Soon
+            </li>
+            <li
+              className='w3-bar-item w3-button'
+              onClick={() => handleNavLinkClick('/products')}>
               PRODUCTS
             </li>
-            <li className='w3-bar-item w3-button' onClick={() => handleNavLinkClick('/about')}>
+            <li
+              className='w3-bar-item w3-button'
+              onClick={() => handleNavLinkClick('/about')}>
               ABOUT US
             </li>
-            <li className='w3-bar-item w3-button' onClick={() => handleNavLinkClick('/news')}>
+            <li
+              className='w3-bar-item w3-button'
+              onClick={() => handleNavLinkClick('/news')}>
               NEWS & UPDATES
             </li>
-            <li className='w3-bar-item w3-button' onClick={() => handleNavLinkClick('/shop')}>
+            <li
+              className='w3-bar-item w3-button'
+              onClick={() => handleNavLinkClick('/shop')}>
               SHOP
             </li>
-            <li className='w3-bar-item w3-button' onClick={() => handleNavLinkClick('/blog')}>
+            <li
+              className='w3-bar-item w3-button'
+              onClick={() => handleNavLinkClick('/blog')}>
               BLOG
             </li>
-            <li className='w3-bar-item w3-button' onClick={() => handleNavLinkClick('/contact')}>
+            <li
+              className='w3-bar-item w3-button'
+              onClick={() => handleNavLinkClick('/contact')}>
               CONTACT US
             </li>
           </ul>
@@ -51,8 +72,6 @@ const NavBar = () => {
           </button>
         </div>
       </nav>
-    
-
     </>
   );
 };
